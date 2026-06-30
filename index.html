@@ -15,6 +15,7 @@
         :root {
             --primary: #ad2c00;
             --secondary: #a83900;
+            --accent: #e65100; /* Color para sub-categorías */
             --background: #fef9ef;
             --on-background: #1d1c16;
             --on-surface-variant: #5a413a;
@@ -76,14 +77,28 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
 
+        /* Títulos de Grandes Secciones (Alimentos / Bebidas) */
         .section-title {
             font-family: 'Domine', serif;
-            font-size: 2rem;
+            font-size: 2.2rem;
             color: var(--primary);
             text-align: center;
-            margin: 40px 0 20px 0;
+            margin: 50px 0 30px 0;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
+            border-bottom: 2px solid var(--outline-variant);
+            padding-bottom: 10px;
+        }
+
+        /* Títulos de Sub-categorías (Tequila, Birria, etc) */
+        .category-title {
+            font-family: 'Domine', serif;
+            font-size: 1.5rem;
+            color: var(--accent);
+            margin: 40px 0 20px 0;
+            text-transform: capitalize;
+            border-left: 4px solid var(--accent);
+            padding-left: 12px;
         }
 
         .divider {
@@ -176,42 +191,36 @@
 
     <h2 class="section-title">Alimentos</h2>
 
-    <!-- BIRRIA -->
+    <!-- ORDEN DE BIRRIA -->
+    <h3 class="category-title">Orden de Birria</h3>
     <div class="menu-item">
         <div class="item-header">
-            <div class="item-name">Birria de Chivo</div>
+            <div class="item-name">Chivo</div>
             <div class="item-price">$190</div>
         </div>
-        <p class="item-notes">Seca o Consomé. Acompañada c/Frijoles Puercos o Arroz.</p>
     </div>
-
     <div class="menu-item">
         <div class="item-header">
-            <div class="item-name">Birria de Res</div>
+            <div class="item-name">Res</div>
             <div class="item-price">$150</div>
         </div>
-        <p class="item-notes">Seca o Consomé. Acompañada c/Frijoles Puercos o Arroz.</p>
     </div>
-
     <div class="menu-item">
         <div class="item-header">
-            <div class="item-name">Birria de Puerco</div>
+            <div class="item-name">Puerco</div>
             <div class="item-price">$110</div>
         </div>
-        <p class="item-notes">Seca o Consomé. Acompañada c/Frijoles Puercos o Arroz.</p>
     </div>
-
     <div class="menu-item">
         <div class="item-header">
-            <div class="item-name">Birria de Pollo</div>
+            <div class="item-name">Pollo</div>
             <div class="item-price">$100</div>
         </div>
-        <p class="item-notes">Seca o Consomé. Acompañada c/Frijoles Puercos o Arroz.</p>
+        <p class="item-notes">Nota: Seca o Consomé. Acompañada c/Frijoles Puercos o Arroz.</p>
     </div>
 
-    <div class="divider"><span>🌶️</span></div>
-
     <!-- ACOMPAÑAMIENTOS -->
+    <h3 class="category-title">Acompañamientos</h3>
     <div class="menu-item">
         <div class="item-header">
             <div class="item-name">Orden Frijoles Puercos</div>
@@ -219,7 +228,6 @@
         </div>
         <p class="item-description">(4 personas)</p>
     </div>
-
     <div class="menu-item">
         <div class="item-header">
             <div class="item-name">Orden Arroz</div>
@@ -228,33 +236,35 @@
         <p class="item-description">(4 personas)</p>
     </div>
 
+    <!-- CHAMORROS -->
+    <h3 class="category-title">Chamorros de Puerco</h3>
     <div class="menu-item">
         <div class="item-header">
-            <div class="item-name">Chamorros de Puerco (Media)</div>
+            <div class="item-name">Media orden</div>
             <div class="item-price">$95</div>
         </div>
         <p class="item-notes">c/Arroz o Frijoles Puercos</p>
     </div>
-
     <div class="menu-item">
         <div class="item-header">
-            <div class="item-name">Chamorros de Puerco (Completa)</div>
+            <div class="item-name">Orden completa</div>
             <div class="item-price">$150</div>
         </div>
         <p class="item-notes">c/Arroz o Frijoles Puercos</p>
     </div>
 
-    <div class="divider"><span>🌶️</span></div>
-
-    <!-- ANTOJITOS -->
+    <!-- QUESABIRRIA -->
+    <h3 class="category-title">Quesabirria</h3>
     <div class="menu-item">
         <div class="item-header">
-            <div class="item-name">Quesa birria (3 pzs)</div>
+            <div class="item-name">Orden de 3pzs</div>
             <div class="item-price">$120</div>
         </div>
-        <p class="item-description">Con consomé. Carne a elegir: Chivo, Res, Puerco, o Pollo.</p>
+        <p class="item-description">c/consomé. Carne a elegir: Chivo, Res, Puerco, o Pollo.</p>
     </div>
 
+    <!-- TORTA Y BURRITO -->
+    <h3 class="category-title">Torta y Burrito</h3>
     <div class="menu-item">
         <div class="item-header">
             <div class="item-name">Torta</div>
@@ -262,7 +272,6 @@
         </div>
         <p class="item-description">Birria, Chivo, Res, Puerco, o Pollo.</p>
     </div>
-
     <div class="menu-item">
         <div class="item-header">
             <div class="item-name">Burrito</div>
@@ -271,111 +280,8 @@
         <p class="item-description">Birria, Chivo, Res, Puerco, o Pollo.</p>
     </div>
 
-    <div class="divider"><span>🌶️</span></div>
-
-    <!-- TOSTADAS -->
-    <div class="menu-item">
-        <div class="item-header">
-            <div class="item-name">Tostadas Raspadas (1 Carne)</div>
-        </div>
-        <div class="variant-row"><span>Chica</span><span>$60</span></div>
-        <div class="variant-row"><span>Grande</span><span>$70</span></div>
-        <p class="item-notes">Carnes: Trompa, Cuero, Pata, Hígado, Lengua, Todo Cerdo. (Incluye Repollo, Cebolla, Jitomate, Queso, Salsas).</p>
-    </div>
-
-    <div class="menu-item">
-        <div class="item-header">
-            <div class="item-name">Tostadas Raspadas (2 Carnes)</div>
-        </div>
-        <div class="variant-row"><span>Chica</span><span>$70</span></div>
-        <div class="variant-row"><span>Grande</span><span>$80</span></div>
-        <p class="item-notes">Carnes: Trompa, Cuero, Pata, Hígado, Lengua, Todo Cerdo.</p>
-    </div>
-
-    <div class="menu-item">
-        <div class="item-header">
-            <div class="item-name">Tostadas Raspadas (3 Carnes)</div>
-        </div>
-        <div class="variant-row"><span>Chica</span><span>$80</span></div>
-        <div class="variant-row"><span>Grande</span><span>$90</span></div>
-        <p class="item-notes">Carnes: Trompa, Cuero, Pata, Hígado, Lengua, Todo Cerdo.</p>
-    </div>
-
-    <div class="menu-item">
-        <div class="item-header">
-            <div class="item-name">Tostadas Raspadas (4 Carnes)</div>
-        </div>
-        <div class="variant-row"><span>Chica</span><span>$90</span></div>
-        <div class="variant-row"><span>Grande</span><span>$100</span></div>
-        <p class="item-notes">Carnes: Trompa, Cuero, Pata, Hígado, Lengua, Todo Cerdo.</p>
-    </div>
-
-    <div class="menu-item">
-        <div class="item-header">
-            <div class="item-name">Tostadas Raspadas (Campechana)</div>
-        </div>
-        <div class="variant-row"><span>Chica</span><span>$110</span></div>
-        <div class="variant-row"><span>Grande</span><span>$130</span></div>
-        <p class="item-notes">Carnes: Trompa, Cuero, Pata, Hígado, Lengua, Todo Cerdo.</p>
-    </div>
-
-    <div class="divider"><span>🌶️</span></div>
-
-    <!-- TACOS DORADOS -->
-    <div class="menu-item">
-        <div class="item-header">
-            <div class="item-name">Tacos Dorados Raspados (Pollo)</div>
-            <div class="item-price">$25 c/u</div>
-        </div>
-    </div>
-
-    <div class="menu-item">
-        <div class="item-header">
-            <div class="item-name">Tacos Dorados Raspados (Papa)</div>
-            <div class="item-price">$25 c/u</div>
-        </div>
-    </div>
-
-    <div class="menu-item">
-        <div class="item-header">
-            <div class="item-name">Tacos Dorados Raspados (Carne)</div>
-            <div class="item-price">$35 c/u</div>
-        </div>
-        <p class="item-notes">Carnes: Trompa, Cuero, Pata, Hígado, Lengua, Todo Cerdo. (Incluye Repollo, Cebolla, Jitomate, Queso, Salsas).</p>
-    </div>
-
-    <div class="divider"><span>🌶️</span></div>
-
-    <!-- BIRRIA KILO -->
-    <div class="menu-item">
-        <div class="item-header">
-            <div class="item-name">Birria de Chivo (Kilo)</div>
-            <div class="item-price">$700</div>
-        </div>
-    </div>
-    <div class="menu-item">
-        <div class="item-header">
-            <div class="item-name">Birria de Res (Kilo)</div>
-            <div class="item-price">$370</div>
-        </div>
-    </div>
-    <div class="menu-item">
-        <div class="item-header">
-            <div class="item-name">Birria de Puerco (Kilo)</div>
-            <div class="item-price">$250</div>
-        </div>
-    </div>
-    <div class="menu-item">
-        <div class="item-header">
-            <div class="item-name">Birria de Pollo (Kilo)</div>
-            <div class="item-price">$220</div>
-        </div>
-        <p class="item-notes">Se entrega con cebolla, limón, chile y Consomé.</p>
-    </div>
-
-    <div class="divider"><span>🌶️</span></div>
-
     <!-- COMPLEMENTOS -->
+    <h3 class="category-title">Complementos</h3>
     <div class="menu-item">
         <div class="item-header">
             <div class="item-name">Quesadillas Blanditas</div>
@@ -401,12 +307,108 @@
         </div>
     </div>
 
+    <!-- BIRRIA KILO -->
+    <h3 class="category-title">Birria Kilo</h3>
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Chivo</div>
+            <div class="item-price">$700</div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Res</div>
+            <div class="item-price">$370</div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Puerco</div>
+            <div class="item-price">$250</div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Pollo</div>
+            <div class="item-price">$220</div>
+        </div>
+        <p class="item-notes">Se entrega con cebolla, limón, chile y Consomé.</p>
+    </div>
+
+    <!-- TOSTADAS -->
+    <h3 class="category-title">Tostadas Raspadas</h3>
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">1 Carne</div>
+        </div>
+        <div class="variant-row"><span>Chica</span><span>$60</span></div>
+        <div class="variant-row"><span>Grande</span><span>$70</span></div>
+        <p class="item-notes">Carnes: Trompa, Cuero, Pata, Hígado, Lengua, Todo Cerdo. (Incluye Repollo, Cebolla, Jitomate, Queso, Salsas).</p>
+    </div>
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">2 Carnes</div>
+        </div>
+        <div class="variant-row"><span>Chica</span><span>$70</span></div>
+        <div class="variant-row"><span>Grande</span><span>$80</span></div>
+        <p class="item-notes">Carnes: Trompa, Cuero, Pata, Hígado, Lengua, Todo Cerdo.</p>
+    </div>
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">3 Carnas</div>
+        </div>
+        <div class="variant-row"><span>Chica</span><span>$80</span></div>
+        <div class="variant-row"><span>Grande</span><span>$90</span></div>
+        <p class="item-notes">Carnes: Trompa, Cuero, Pata, Hígado, Lengua, Todo Cerdo.</p>
+    </div>
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">4 Carnas</div>
+        </div>
+        <div class="variant-row"><span>Chica</span><span>$90</span></div>
+        <div class="variant-row"><span>Grande</span><span>$100</span></div>
+        <p class="item-notes">Carnes: Trompa, Cuero, Pata, Hígado, Lengua, Todo Cerdo.</p>
+    </div>
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Campechana</div>
+        </div>
+        <div class="variant-row"><span>Chica</span><span>$110</span></div>
+        <div class="variant-row"><span>Grande</span><span>$130</span></div>
+        <p class="item-notes">Carnes: Trompa, Cuero, Pata, Hígado, Lengua, Todo Cerdo.</p>
+    </div>
+
+    <!-- TACOS DORADOS -->
+    <h3 class="category-title">Tacos Dorados Raspados</h3>
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Pollo</div>
+            <div class="item-price">$25 c/u</div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Papa</div>
+            <div class="item-price">$25 c/u</div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Con Carne</div>
+            <div class="item-price">$35 c/u</div>
+        </div>
+        <p class="item-notes">Carnes: Trompa, Cuero, Pata, Hígado, Lengua, Todo Cerdo. (Incluye Repollo, Cebolla, Jitomate, Queso, Salsas).</p>
+    </div>
+
+    <div class="divider"><span>🍹</span></div>
+
     <h2 class="section-title">Bebidas</h2>
 
     <!-- TEQUILA -->
+    <h3 class="category-title">Tequila</h3>
     <div class="menu-item">
         <div class="item-header">
-            <div class="item-name">Tequila 1800 Cristalino</div>
+            <div class="item-name">1800 Cristalino</div>
             <div class="item-price">$150</div>
         </div>
     </div>
@@ -453,9 +455,8 @@
         </div>
     </div>
 
-    <div class="divider"><span>🍹</span></div>
-
-    <!-- RON / BRANDY / VODKA / COGNAC / MEZCAL / WHISKY -->
+    <!-- RON -->
+    <h3 class="category-title">Ron</h3>
     <div class="menu-item">
         <div class="item-header">
             <div class="item-name">Bacardi Blanco</div>
@@ -468,6 +469,9 @@
             <div class="item-price">$70</div>
         </div>
     </div>
+
+    <!-- BRANDY -->
+    <h3 class="category-title">Brandy</h3>
     <div class="menu-item">
         <div class="item-header">
             <div class="item-name">Torres 10</div>
@@ -480,6 +484,9 @@
             <div class="item-price">$100</div>
         </div>
     </div>
+
+    <!-- VODKA -->
+    <h3 class="category-title">Vodka</h3>
     <div class="menu-item">
         <div class="item-header">
             <div class="item-name">Absolut</div>
@@ -492,6 +499,9 @@
             <div class="item-price">$50</div>
         </div>
     </div>
+
+    <!-- COGNAC -->
+    <h3 class="category-title">Cognac</h3>
     <div class="menu-item">
         <div class="item-header">
             <div class="item-name">Martell VSOP</div>
@@ -504,6 +514,9 @@
             <div class="item-price">$180</div>
         </div>
     </div>
+
+    <!-- MEZCAL -->
+    <h3 class="category-title">Mezcal</h3>
     <div class="menu-item">
         <div class="item-header">
             <div class="item-name">400 Conejos</div>
@@ -516,6 +529,9 @@
             <div class="item-price">$100</div>
         </div>
     </div>
+
+    <!-- WHISKY -->
+    <h3 class="category-title">Whisky</h3>
     <div class="menu-item">
         <div class="item-header">
             <div class="item-name">Buchanans</div>
