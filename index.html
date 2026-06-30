@@ -128,6 +128,14 @@
             font-size: 0.85rem;
         }
 
+        .variant-row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
         footer {
             text-align: center;
             padding: 40px 0;
@@ -259,22 +267,135 @@
     <div class="menu-item">
         <div class="item-header">
             <div class="item-name">Tostadas Raspadas (1 Carne)</div>
-            <div class="item-price">M: $60 | G: $70</div>
         </div>
-        <p class="item-notes">Carnes: Trompa, Cuero, Pata, Hígado, Lengua, Todo Cerdo.</p>
+        <div class="variant-row"><span>Chica</span><span>$60</span></div>
+        <div class="variant-row"><span>Grande</span><span>$70</span></div>
+        <p class="item-notes">Carnes: Trompa, Cuero, Pata, Hígado, Lengua, Todo Cerdo. (Incluye Repollo, Cebolla, Jitomate, Queso, Salsas).</p>
     </div>
 
     <div class="menu-item">
         <div class="item-header">
             <div class="item-name">Tostadas Raspadas (2 Carnes)</div>
-            <div class="item-price">M: $70 | G: $80</div>
         </div>
+        <div class="variant-row"><span>Chica</span><span>$70</span></div>
+        <div class="variant-row"><span>Grande</span><span>$80</span></div>
+        <p class="item-notes">Carnes: Trompa, Cuero, Pata, Hígado, Lengua, Todo Cerdo.</p>
+    </div>
+
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Tostadas Raspadas (3 Carnes)</div>
+        </div>
+        <div class="variant-row"><span>Chica</span><span>$80</span></div>
+        <div class="variant-row"><span>Grande</span><span>$90</span></div>
+        <p class="item-notes">Carnes: Trompa, Cuero, Pata, Hígado, Lengua, Todo Cerdo.</p>
+    </div>
+
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Tostadas Raspadas (4 Carnes)</div>
+        </div>
+        <div class="variant-row"><span>Chica</span><span>$90</span></div>
+        <div class="variant-row"><span>Grande</span><span>$100</span></div>
+        <p class="item-notes">Carnes: Trompa, Cuero, Pata, Hígado, Lengua, Todo Cerdo.</p>
+    </div>
+
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Tostadas Raspadas (Campechana)</div>
+        </div>
+        <div class="variant-row"><span>Chica</span><span>$110</span></div>
+        <div class="variant-row"><span>Grande</span><span>$130</span></div>
         <p class="item-notes">Carnes: Trompa, Cuero, Pata, Hígado, Lengua, Todo Cerdo.</p>
     </div>
 
     <div class="divider"><span>🌶️</span></div>
 
+    <!-- TACOS DORADOS -->
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Tacos Dorados Raspados (Pollo)</div>
+            <div class="item-price">$25 c/u</div>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Tacos Dorados Raspados (Papa)</div>
+            <div class="item-price">$25 c/u</div>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Tacos Dorados Raspados (Carne)</div>
+            <div class="item-price">$35 c/u</div>
+        </div>
+        <p class="item-notes">Carnes: Trompa, Cuero, Pata, Hígado, Lengua, Todo Cerdo. (Incluye Repollo, Cebolla, Jitomate, Queso, Salsas).</p>
+    </div>
+
+    <div class="divider"><span>🌶️</span></div>
+
+    <!-- BIRRIA KILO -->
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Birria de Chivo (Kilo)</div>
+            <div class="item-price">$700</div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Birria de Res (Kilo)</div>
+            <div class="item-price">$370</div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Birria de Puerco (Kilo)</div>
+            <div class="item-price">$250</div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Birria de Pollo (Kilo)</div>
+            <div class="item-price">$220</div>
+        </div>
+        <p class="item-notes">Se entrega con cebolla, limón, chile y Consomé.</p>
+    </div>
+
+    <div class="divider"><span>🌶️</span></div>
+
+    <!-- COMPLEMENTOS -->
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Quesadillas Blanditas</div>
+            <div class="item-price">$30</div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Taco de Cabeza c/u</div>
+            <div class="item-price">$20</div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Consomé chico</div>
+            <div class="item-price">$10</div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Consomé Grande</div>
+            <div class="item-price">$20</div>
+        </div>
+    </div>
+
+    <div class="divider"><span>🌶️</span></div>
+
     <!-- BEBIDAS -->
+    <h2 style="font-family: 'Domine', serif; text-align: center; margin: 20px 0; color: var(--primary);">Bebidas</h2>
+
     <div class="menu-item">
         <div class="item-header">
             <div class="item-name">Tequila 1800 Cristalino</div>
@@ -289,8 +410,113 @@
     </div>
     <div class="menu-item">
         <div class="item-header">
-            <div class="item-name">Mezcal Monte Lobos</div>
+            <div class="item-name">Maestro Dobel</div>
+            <div class="item-price">$190</div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Centenario Plata</div>
+            <div class="item-price">$70</div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Centenario Reposado</div>
+            <div class="item-price">$70</div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Centenario Añejo</div>
+            <div class="item-price">$130</div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Herradura Reposado</div>
+            <div class="item-price">$130</div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Herradura Añejo</div>
+            <div class="item-price">$200</div>
+        </div>
+    </div>
+
+    <div class="divider"><span>🍹</span></div>
+
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Bacardi Blanco</div>
+            <div class="item-price">$80</div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Bacardi Solera</div>
+            <div class="item-price">$70</div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Torres 10</div>
+            <div class="item-price">$70</div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Torres 15</div>
             <div class="item-price">$100</div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Absolut</div>
+            <div class="item-price">$60</div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Smirnoff</div>
+            <div class="item-price">$50</div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Martell VSOP</div>
+            <div class="item-price">$180</div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Hennessey</div>
+            <div class="item-price">$180</div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">400 Conejos</div>
+            <div class="item-price">$80</div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Monte Lobos</div>
+            <div class="item-price">$100</div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Buchanans</div>
+            <div class="item-price">$150</div>
+        </div>
+    </div>
+    <div class="menu-item">
+        <div class="item-header">
+            <div class="item-name">Chivas</div>
+            <div class="item-price">$140</div>
         </div>
     </div>
 
